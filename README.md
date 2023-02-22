@@ -57,6 +57,14 @@ debugger(do: "catch ActiveRecord::RecordInvalid do: info")
 
 rdbg will be automatically called by debug and allow to interactively debug your application.
 
+**Code quality**
+
+just run following command to dectect and fix all violations:
+
+```bash
+standardrb --fix
+```
+
 
 
 Things you may want to cover:
