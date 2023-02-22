@@ -12,8 +12,8 @@ alias docked='docker run --rm -it -v ${PWD}:/rails -v ruby-bundle-cache:/bundle 
 ```
 docker-compose build
 docked bundle install
-docker-compose run web rails db:create - ? is this step needed?
-docked rails db:migrate
+docker-compose run web rails db:create
+docker-compose run web rails db:migrate
 ```
 
 
@@ -38,7 +38,7 @@ docker attach <webcontainer id>
 
 Running rails console:
 ```bash
-docked rails c
+docker-compose run web rails c 
 ```
 
 **Debugging**
@@ -69,7 +69,11 @@ standardrb --fix
 
 Things you may want to cover:
 
-* Ruby version
+* DATABASE: PostgreSQL 15.2
+
+* Ruby version 3.2.1
+
+* Rails version 7.0.4
 
 * System dependencies
 
