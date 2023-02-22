@@ -1,0 +1,1 @@
+rdbg -n -open=vscode -c -- vin/rails s
