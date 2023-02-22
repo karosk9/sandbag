@@ -15,9 +15,9 @@
 # gem "pg"
 #
 default: &default
-  # <- needed for dockercompose
-  # host: db 
-  # username: postgres 
+  # <- needed for docker-compose and running dockerized app. If you prefer to run rails without docker - comment out next 2 lines
+  host: db 
+  username: postgres 
 
   adapter: postgresql
   encoding: unicode
